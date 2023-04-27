@@ -1,0 +1,94 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.trillion-widget {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.trillion-viewer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Buttons style */
+.buttons__wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+}
+.button {
+    cursor: pointer;
+    outline: none;
+    background: #222D33;
+    border: none;
+    width: auto;
+    padding: 0 20px;
+    border-radius: 5px;
+}
+.product__card-form-button-ar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222D33;
+    width: 100%;
+    height: 50px;
+    color: #FFF;
+}
+.product__card-form-button-ar:hover {
+    opacity: .7;
+    transition: .3s ease-in-out;
+}
+.product__card-form-button-ar svg {
+    margin-right: 10px;
+}
+.product__card-form-button-ar svg path{
+    fill: #FFF;
+}
+
+.closeBtn {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.5);
+    z-index: 7;
+}
+.closeBtn:hover {
+    background: rgba(255,255,255,.8);
+    transition: .3s ease-in-out;
+}
+
+
+
+.show {
+    opacity: 1;
+    visibility: visible;
+    transition: .3s ease-in-out;
+}
