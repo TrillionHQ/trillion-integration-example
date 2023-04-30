@@ -41,7 +41,10 @@ closeBtn.addEventListener('click', () => {
 
 jewelryExists('ring_demo_store')
     .then(result => {
-        console.log(result);
+        if(result) {
+            viewerBtn.classList.add('active')
+            widgetBtn.classList.add('active')
+        }
     })
     .catch(error => {
         console.error(error);
