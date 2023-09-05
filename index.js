@@ -1,5 +1,5 @@
-import {TrillionWidgetApp} from "https://unpkg.com/trillion-widget@0.12.3/build-lib/trillion-widget.js"
-import {TrillionViewerApp} from "https://unpkg.com/trillion-viewer@0.12.3/build-lib/trillion-viewer.js"
+import {TrillionWidgetApp} from "https://unpkg.com/trillion-widget@0.16.5/build-lib/trillion-widget.js"
+import {TrillionViewerApp} from "https://unpkg.com/trillion-viewer@0.16.5/build-lib/trillion-viewer.js"
 import {jewelryExists} from "./checkJewelryExist.js"
 
 const widget = document.getElementById('trillion-widget')
@@ -24,6 +24,7 @@ viewerBtn.addEventListener('click', () => {
     closeBtn.classList.add('show')
 
     trillionViewer.init(viewer)
+    trillionViewer.setLoaderTheme('darkOnLight')
     trillionViewer.setJewelryID('ring_demo_store')
     trillionViewer.refresh()
 })
