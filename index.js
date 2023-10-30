@@ -4,6 +4,7 @@ import {jewelryExists} from "./checkJewelryExist.js"
 
 const widget = document.getElementById('trillion-widget')
 const viewer = document.getElementById('trillion-viewer')
+const apiKey = "PASTE_YOUR_API_KEY_HERE"
 const trillionWidget = new TrillionWidgetApp()
 const trillionViewer = new TrillionViewerApp()
 const widgetBtn = document.getElementById('widgetBtn')
@@ -15,6 +16,7 @@ widgetBtn.addEventListener('click', () => {
     closeBtn.classList.add('show')
 
     trillionWidget.init(widget)
+    trillionWidget.setServiceActivationKey(apiKey)
     trillionWidget.setJewelryID('ring_demo_store')
     trillionWidget.refresh()
 })
@@ -24,6 +26,7 @@ viewerBtn.addEventListener('click', () => {
     closeBtn.classList.add('show')
 
     trillionViewer.init(viewer)
+    trillionViewer.setServiceActivationKey(apiKey)
     trillionViewer.setJewelryID('ring_demo_store')
     trillionViewer.refresh()
 })
