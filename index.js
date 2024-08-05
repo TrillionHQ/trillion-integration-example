@@ -1,5 +1,5 @@
-import {TrillionWidgetApp} from "https://unpkg.com/trillion-widget@0.19.5/build-lib/trillion-widget.js"
-import {TrillionViewerApp} from "https://unpkg.com/trillion-viewer@0.19.5/build-lib/trillion-viewer.js"
+import {TrillionWidgetApp} from "https://unpkg.com/trillion-widget@0.37.3/build-lib/trillion-widget.js"
+import {TrillionViewerApp} from "https://unpkg.com/trillion-viewer@0.37.3/build-lib/trillion-viewer.js"
 import {jewelryExists} from "./checkJewelryExist.js"
 
 const widget = document.getElementById('trillion-widget')
